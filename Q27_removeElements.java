@@ -5,8 +5,8 @@
  * @Description: 
  * @Date: 2021-01-28 16:15:34
  * @LastEditors: Yuang Zhang
- * @LastEditTime: 2021-01-28 19:18:14
- * @FilePath: /Leetcode/Q27_removeElements.java
+ * @LastEditTime: 2021-01-28 21:35:42
+ * @FilePath: /Java/Leetcode/Q27_removeElements.java
  */
 
 import java.util.Arrays;
@@ -26,7 +26,9 @@ public class Q27_removeElements {
 
         Q27_removeElements q27_removeElements = new Q27_removeElements();
         // q27_removeElements.new MyAnswer(nums, val);
-        q27_removeElements.new LcAnswer2(nums, val);
+        // q27_removeElements.new LcAnswer2(nums, val);
+        q27_removeElements.new YtAnswer(nums, val);
+
     }
 
     /**
@@ -111,6 +113,8 @@ public class Q27_removeElements {
         public int removeElement(int[] nums, int val) {
             int i = 0;
             int n = nums.length;
+            // How to not to get confused: length would always be arr.length.
+            // Only index would be length - 1. do not mess up length and index.
             while (i < n) {
                 if (nums[i] == val) {
                     nums[i] = nums[n - 1];
@@ -121,6 +125,29 @@ public class Q27_removeElements {
                 }
             }
             return n;
+        }
+    }
+
+    // kinda like two pointer Approach 1 on Leetcode by using for (int i : num)
+    // instead of another pointer
+    class YtAnswer {
+        YtAnswer(int[] nums, int val) {
+            System.out.println(removeElement(nums, val));
+        }
+
+        public int removeElement(int[] nums, int val) {
+            int res = 0;
+            if (nums == null || nums.length < 1) {
+                return res;
+            }
+
+            int index = 0;
+            for (int i : nums) {
+                if (i != val) {
+                    nums[index++] = i;
+                }
+            }
+            return index;
         }
     }
 }
