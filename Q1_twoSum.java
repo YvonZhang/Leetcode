@@ -6,7 +6,7 @@
  * @Description: 
  * @Date: 2021-01-27 18:18:56
  * @LastEditors: Yuang Zhang
- * @LastEditTime: 2021-01-28 17:11:04
+ * @LastEditTime: 2021-01-28 19:07:27
  * @FilePath: /Leetcode/Q1_twoSum.java
  */
 import java.util.Map;
@@ -26,11 +26,6 @@ public class Q1_twoSum {
     // Runtime: 5 ms, faster than 17.15% of Java online submissions for Two Sum.
     // Memory Usage: 42.2 MB, less than 5.75% of Java online submissions for Two
     // Sum.
-    // }
-
-    // class Q1_Solution {
-    // public static void MyAnswer(int[] nums, int target) {
-    // MyAnswer(nums, target);
     // }
 
     class MyAnswer {
