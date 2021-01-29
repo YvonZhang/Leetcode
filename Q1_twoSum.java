@@ -1,4 +1,3 @@
-package Array;
 
 /*
  * @Author: Yuang Zhang 
@@ -7,8 +6,8 @@ package Array;
  * @Description: 
  * @Date: 2021-01-27 18:18:56
  * @LastEditors: Yuang Zhang
- * @LastEditTime: 2021-01-29 18:00:38
- * @FilePath: /Leetcode/Array/Q1_twoSum.java
+ * @LastEditTime: 2021-01-29 18:25:08
+ * @FilePath: /Leetcode/Q1_twoSum.java
  */
 import java.util.Map;
 import java.util.HashMap;
