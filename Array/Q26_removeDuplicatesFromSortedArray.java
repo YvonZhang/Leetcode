@@ -1,3 +1,4 @@
+package Array;
 
 /*
  * @Author: Yuang Zhang 
@@ -6,8 +7,8 @@
  * @Description: 
  * @Date: 2021-01-29 11:33:53
  * @LastEditors: Yuang Zhang
- * @LastEditTime: 2021-01-29 12:00:39
- * @FilePath: /Java/Leetcode/Q26_removeDuplicatesFromSortedArray.java
+ * @LastEditTime: 2021-01-29 18:00:46
+ * @FilePath: /Leetcode/Array/Q26_removeDuplicatesFromSortedArray.java
  */
 import java.util.Arrays;
 

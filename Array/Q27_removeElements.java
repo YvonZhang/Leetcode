@@ -1,3 +1,5 @@
+package Array;
+
 /*
  * @Author: Yuang Zhang 
  * @email: yuang.zhang.chn@gmail.com
@@ -5,8 +7,8 @@
  * @Description: 
  * @Date: 2021-01-28 16:15:34
  * @LastEditors: Yuang Zhang
- * @LastEditTime: 2021-01-28 21:35:42
- * @FilePath: /Java/Leetcode/Q27_removeElements.java
+ * @LastEditTime: 2021-01-29 18:00:27
+ * @FilePath: /Leetcode/Array/Q27_removeElements.java
  */
 
 import java.util.Arrays;
