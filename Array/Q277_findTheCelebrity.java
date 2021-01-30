@@ -5,12 +5,12 @@
  * @Description: 
  * @Date: 2021-01-29 18:02:34
  * @LastEditors: Yuang Zhang
- * @LastEditTime: 2021-01-29 20:35:31
+ * @LastEditTime: 2021-01-30 11:14:17
  * @FilePath: /Leetcode/Array/Q277_findTheCelebrity.java
  */
 package Array;
 
-public class Q277_findTheCelebrity {
+public class Q277_FindTheCelebrity {
     /*
      * The knows API is defined in the parent class Relation. Boolean knows(int
      * a,int b);
@@ -25,7 +25,7 @@ public class Q277_findTheCelebrity {
     public static void main(String[] args) {
 
         int n = 3;
-        Q277_findTheCelebrity q277_findTheCelebrity = new Q277_findTheCelebrity();
+        Q277_FindTheCelebrity q277_findTheCelebrity = new Q277_FindTheCelebrity();
 
         // q277_findTheCelebrity.new MyAnswer(n);
         q277_findTheCelebrity.new OptimizedAnswer(n);

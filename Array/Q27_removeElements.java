@@ -13,7 +13,7 @@ package Array;
 
 import java.util.Arrays;
 
-public class Q27_removeElements {
+public class Q27_RemoveElements {
     public static void main(String[] args) {
         int[] nums = { 3, 2, 2, 3 };
         // int[] nums = { 1, 3, 3, 3 };
@@ -26,7 +26,7 @@ public class Q27_removeElements {
         int frontIndex = 0, backIndex = nums.length - 1;
         int count;
 
-        Q27_removeElements q27_removeElements = new Q27_removeElements();
+        Q27_RemoveElements q27_removeElements = new Q27_RemoveElements();
         // q27_removeElements.new MyAnswer(nums, val);
         // q27_removeElements.new LcAnswer2(nums, val);
         q27_removeElements.new YtAnswer(nums, val);

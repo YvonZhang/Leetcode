@@ -1,10 +1,20 @@
+<!--
+ * @Author: Yuang Zhang 
+ * @email: yuang.zhang.chn@gmail.com
+ * @github: https://github.com/YvonZhang
+ * @Description: 
+ * @Date: 2021-01-29 17:58:47
+ * @LastEditors: Yuang Zhang
+ * @LastEditTime: 2021-01-30 11:10:42
+ * @FilePath: /Leetcode/Array/Array.md
+-->
 
 Array
 基础			
 <!-- 27	Remove Element	视频讲解	 -->
 <!-- 26	Remove Duplicates from Sorted Array	视频讲解	 -->
 <!-- 80	Remove Duplicates from Sorted Array II	视频讲解	 -->
-277	Find the Celebrity	视频讲解	
+<!-- 277	Find the Celebrity	视频讲解	  -->
 189	Rotate Array	视频讲解	
 41	First Missing Positive	视频讲解	
 299	Bulls and Cows	视频讲解	

@@ -12,12 +12,12 @@ package Array;
  */
 import java.util.Arrays;
 
-public class Q80_removeDuplicatesFromSortedArrayII {
+public class Q80_RemoveDuplicatesFromSortedArrayII {
     public static void main(String[] args) {
         // int[] nums = { 1, 1, 1, 2, 2, 3 };
         int[] nums = { 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3 };
 
-        Q80_removeDuplicatesFromSortedArrayII q80_removeDuplicatesFromSortedArrayII = new Q80_removeDuplicatesFromSortedArrayII();
+        Q80_RemoveDuplicatesFromSortedArrayII q80_removeDuplicatesFromSortedArrayII = new Q80_RemoveDuplicatesFromSortedArrayII();
         q80_removeDuplicatesFromSortedArrayII.new MyAnswer(nums);
 
     }

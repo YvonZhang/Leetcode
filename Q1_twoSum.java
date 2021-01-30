@@ -6,19 +6,19 @@
  * @Description: 
  * @Date: 2021-01-27 18:18:56
  * @LastEditors: Yuang Zhang
- * @LastEditTime: 2021-01-29 18:25:08
+ * @LastEditTime: 2021-01-30 11:14:02
  * @FilePath: /Leetcode/Q1_twoSum.java
  */
 import java.util.Map;
 import java.util.HashMap;
 import java.util.Arrays;
 
-public class Q1_twoSum {
+public class Q1_TwoSum {
     public static void main(String[] args) {
         int[] nums = { 3, 5, 5, 6 };
         int target = 10;
 
-        Q1_twoSum q1_twoSum = new Q1_twoSum();
+        Q1_TwoSum q1_twoSum = new Q1_TwoSum();
         q1_twoSum.new MyAnswer(nums, target);
         q1_twoSum.new LcAnswer2(nums, target);
         q1_twoSum.new LcAnswer3(nums, target);
