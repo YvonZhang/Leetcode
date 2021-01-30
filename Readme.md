@@ -5,7 +5,7 @@
  * @Description: 
  * @Date: 2021-01-27 21:24:35
  * @LastEditors: Yuang Zhang
- * @LastEditTime: 2021-01-29 17:58:25
+ * @LastEditTime: 2021-01-30 11:24:42
  * @FilePath: /Leetcode/Readme.md
 -->
 
@@ -20,7 +20,7 @@
 
 由于我的刷题过程是以年为单位的，因此近一年采取以下的刷题策略：
 
-1、按照https://cspiration.com/leetcodeClassification列表，进行刷题，参考答案参考花花酱的讲解。
+1、按照https://cspiration.com/leetcodeClassification 列表，进行刷题，参考答案参考花花酱的讲解。
 
 2、近一年的计划就是按照这个列表进行刷题，一个月学1到2个专题。一共18个专题，大约需要1年左右。
 
