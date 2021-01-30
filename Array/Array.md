@@ -5,7 +5,7 @@
  * @Description: 
  * @Date: 2021-01-29 17:58:47
  * @LastEditors: Yuang Zhang
- * @LastEditTime: 2021-01-30 11:10:42
+ * @LastEditTime: 2021-01-30 18:11:47
  * @FilePath: /Leetcode/Array/Array.md
 -->
 
@@ -15,7 +15,7 @@ Array
 <!-- 26	Remove Duplicates from Sorted Array	视频讲解	 -->
 <!-- 80	Remove Duplicates from Sorted Array II	视频讲解	 -->
 <!-- 277	Find the Celebrity	视频讲解	  -->
-189	Rotate Array	视频讲解	
+<!-- 189	Rotate Array	视频讲解	 -->
 41	First Missing Positive	视频讲解	
 299	Bulls and Cows	视频讲解	
 134	Gas Station	视频讲解	
@@ -88,3 +88,9 @@ Counter
 315	Count of Smaller Numbers After Self	视频讲解	
 300	Longest Increasing Subsequence	视频讲解	
 354	Russian Doll Envelopes	视频讲解	
+
+
+
+
+
+
