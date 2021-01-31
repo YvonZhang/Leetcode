@@ -5,7 +5,7 @@
  * @Description: 
  * @Date: 2021-01-29 17:58:47
  * @LastEditors: Yuang Zhang
- * @LastEditTime: 2021-01-30 18:11:47
+ * @LastEditTime: 2021-01-31 21:56:18
  * @FilePath: /Leetcode/Array/Array.md
 -->
 
@@ -16,9 +16,9 @@ Array
 <!-- 80	Remove Duplicates from Sorted Array II	视频讲解	 -->
 <!-- 277	Find the Celebrity	视频讲解	  -->
 <!-- 189	Rotate Array	视频讲解	 -->
-41	First Missing Positive	视频讲解	
-299	Bulls and Cows	视频讲解	
-134	Gas Station	视频讲解	
+<!-- 41	First Missing Positive	视频讲解	 -->
+<!-- 299	Bulls and Cows	视频讲解	 -->
+<!-- 134	Gas Station	视频讲解	 -->
 118	Pascal's Triangle	视频讲解	很少考
 119	Pascal's Triangle II	视频讲解	很少考
 169	Majority Element	视频讲解	很少考
