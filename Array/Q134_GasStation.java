@@ -5,22 +5,23 @@
  * @Description: 
  * @Date: 2021-01-31 21:14:06
  * @LastEditors: Yuang Zhang
- * @LastEditTime: 2021-01-31 21:55:31
+ * @LastEditTime: 2021-01-31 23:21:07
  * @FilePath: /Leetcode/Array/Q134_GasStation.java
  */
 package Array;
 
 public class Q134_GasStation {
     public static void main(String[] args) {
-        // int[] gas = { 1, 2, 3, 4, 5 };
-        // int[] cost = { 3, 4, 5, 1, 2 };
-        int[] gas = { 3, 1, 1 };
-        int[] cost = { 1, 2, 2 };
+        int[] gas = { 1, 2, 3, 4, 5 };
+        int[] cost = { 3, 4, 5, 1, 2 };
+        // int[] gas = { 3, 1, 1 };
+        // int[] cost = { 1, 2, 2 };
         // int[] gas = { 2, 3, 4 };
         // int[] cost = { 3, 4, 3 };
 
         Q134_GasStation q134_GasStation = new Q134_GasStation();
-        q134_GasStation.new MyAnswer(gas, cost);
+        // q134_GasStation.new MyAnswer(gas, cost);
+        q134_GasStation.new LcAnswer(gas, cost);
     }
 
     /**
@@ -58,6 +59,33 @@ public class Q134_GasStation {
                 return (sIndex + 1) % gas.length;
         }
     }
+
+    // Greedy
+    class LcAnswer {
+        LcAnswer(int[] gas, int[] cost) {
+            System.out.println(canCompleteCircuit(gas, cost));
+        }
+
+        int canCompleteCircuit(int[] gas, int[] cost) {
+            int total = 0, tank = 0, index = 0;
+            for (int i = 0; i < cost.length; i++) {
+                // Greedily move to next
+                int cur = gas[i] - cost[i];
+                // update tank
+                tank += cur;
+                // if last move consume more than available gas in tank - this index cannot be
+                // answer
+                // accumulate the negative cost from here, and start from index next to it
+                if (tank < 0) {// if sum < 0, index can only start from i + 1
+                    index = i + 1;
+                    tank = 0;
+                }
+                total += cur;
+            }
+            return total < 0 ? -1 : index;
+        }
+    }
+
 }
 
 // Input: gas = [1,2,3,4,5], cost = [3,4,5,1,2]
