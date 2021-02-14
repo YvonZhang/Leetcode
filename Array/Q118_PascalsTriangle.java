@@ -5,7 +5,7 @@
  * @Description: 
  * @Date: 2021-02-07 12:56:01
  * @LastEditors: Yuang Zhang
- * @LastEditTime: 2021-02-07 20:36:25
+ * @LastEditTime: 2021-02-14 11:00:03
  * @FilePath: /Leetcode/Array/Q118_PascalsTriangle.java
  */
 package Array;
@@ -59,6 +59,49 @@ public class Q118_PascalsTriangle {
             return res;
 
         };
+
+    }
+
+    class LcAnswer1 {
+
+        LcAnswer1() {
+            System.out.println(generate(5).toString());
+        }
+
+        public List<List<Integer>> generate(int numRows) {
+            List<List<Integer>> triangle = new ArrayList<List<Integer>>();
+
+            // First base case; if user requests zero rows, they get zero rows.
+            if (numRows == 0) {
+                return triangle;
+            }
+
+            // Second base case; first row is always [1].
+            triangle.add(new ArrayList<>());
+            triangle.get(0).add(1);
+
+            for (int rowNum = 1; rowNum < numRows; rowNum++) {
+                List<Integer> row = new ArrayList<>();
+                List<Integer> prevRow = triangle.get(rowNum - 1);
+
+                // The first row element is always 1.
+                row.add(1);
+
+                // Each triangle element (other than the first and last of each row)
+                // is equal to the sum of the elements above-and-to-the-left and
+                // above-and-to-the-right.
+                for (int j = 1; j < rowNum; j++) {
+                    row.add(prevRow.get(j - 1) + prevRow.get(j));
+                }
+
+                // The last row element is always 1.
+                row.add(1);
+
+                triangle.add(row);
+            }
+
+            return triangle;
+        }
 
     }
 }
