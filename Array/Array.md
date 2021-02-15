@@ -19,7 +19,7 @@ Array
 <!-- 41	First Missing Positive	视频讲解	 -->
 <!-- 299	Bulls and Cows	视频讲解	 -->
 <!-- 134	Gas Station	视频讲解	 -->
-118	Pascal's Triangle	视频讲解	很少考
+<!-- 118	Pascal's Triangle	视频讲解	很少考 -->
 119	Pascal's Triangle II	视频讲解	很少考
 169	Majority Element	视频讲解	很少考
 229	Majority Element II	视频讲解	很少考
