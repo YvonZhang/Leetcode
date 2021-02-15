@@ -5,7 +5,7 @@
  * @Description: 
  * @Date: 2021-01-29 17:58:47
  * @LastEditors: Yuang Zhang
- * @LastEditTime: 2021-01-31 21:56:18
+ * @LastEditTime: 2021-02-15 10:57:39
  * @FilePath: /Leetcode/Array/Array.md
 -->
 
@@ -20,7 +20,7 @@ Array
 <!-- 299	Bulls and Cows	视频讲解	 -->
 <!-- 134	Gas Station	视频讲解	 -->
 <!-- 118	Pascal's Triangle	视频讲解	很少考 -->
-119	Pascal's Triangle II	视频讲解	很少考
+<!-- 119	Pascal's Triangle II	视频讲解	很少考 -->
 169	Majority Element	视频讲解	很少考
 229	Majority Element II	视频讲解	很少考
 274	H-Index	视频讲解	
