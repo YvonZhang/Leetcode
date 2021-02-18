@@ -7,8 +7,8 @@ package Array;
  * @Description: 
  * @Date: 2021-01-28 16:15:34
  * @LastEditors: Yuang Zhang
- * @LastEditTime: 2021-01-29 18:00:27
- * @FilePath: /Leetcode/Array/Q27_removeElements.java
+ * @LastEditTime: 2021-02-18 15:00:48
+ * @FilePath: /Leetcode/Array/Q27_RemoveElements.java
  */
 
 import java.util.Arrays;
@@ -22,9 +22,6 @@ public class Q27_RemoveElements {
         int val = 3;
         // int[] nums = { 1, 3, 3, 1, 1, 2, 3, 1, 4, 2, 2, 3, 1, 1 };
         // int val = 1;
-
-        int frontIndex = 0, backIndex = nums.length - 1;
-        int count;
 
         Q27_RemoveElements q27_removeElements = new Q27_RemoveElements();
         // q27_removeElements.new MyAnswer(nums, val);

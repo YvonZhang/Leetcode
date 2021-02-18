@@ -6,8 +6,8 @@
  * @Description: 
  * @Date: 2021-01-27 18:18:56
  * @LastEditors: Yuang Zhang
- * @LastEditTime: 2021-01-30 11:14:02
- * @FilePath: /Leetcode/Q1_twoSum.java
+ * @LastEditTime: 2021-02-18 15:02:03
+ * @FilePath: /Leetcode/Q1_TwoSum.java
  */
 import java.util.Map;
 import java.util.HashMap;
@@ -42,7 +42,6 @@ public class Q1_TwoSum {
             Map<Integer, Integer> numMap = new HashMap<>();
             int i = 0;
             // important to set a default value!
-            int[] res = { -1, -1 };
 
             for (int n : nums) {
                 // in case of the "put" method overwrite the original record.

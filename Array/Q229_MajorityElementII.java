@@ -5,7 +5,7 @@
  * @Description: 
  * @Date: 2021-02-15 23:19:07
  * @LastEditors: Yuang Zhang
- * @LastEditTime: 2021-02-18 10:42:12
+ * @LastEditTime: 2021-02-18 15:01:05
  * @FilePath: /Leetcode/Array/Q229_MajorityElementII.java
  */
 package Array;
@@ -17,9 +17,8 @@ public class Q229_MajorityElementII {
     public static void main(String[] args) {
 
         // int[] nums = { 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 3 };
-        // int[] nums = { 1, 1, 2, 2, 7, 7, 8, 8, 9, 3, 9, 3, 9, 3, 9, 3, 9, 3, 9, 3, 9,
-        // 3, 9, 3, 9, 3, 9, 3, 9, 3, 9, 3,
-        // 9, 3, 9, 3, 9, 3 };
+        int[] nums = { 1, 1, 2, 2, 7, 7, 8, 8, 9, 3, 9, 3, 9, 3, 9, 3, 9, 3, 9, 3, 9, 3, 9, 3, 9, 3, 9, 3, 9, 3, 9, 3,
+                9, 3, 9, 3, 9, 3 };
         // int[] nums = { 2, 1, 1, 3, 1, 4, 5, 6 };
         // int[] nums = { 1 };
         // int[] nums = { 1, 2 };

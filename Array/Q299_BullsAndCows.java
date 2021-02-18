@@ -5,12 +5,10 @@
  * @Description: 
  * @Date: 2021-01-31 17:35:11
  * @LastEditors: Yuang Zhang
- * @LastEditTime: 2021-01-31 18:43:49
+ * @LastEditTime: 2021-02-18 15:00:58
  * @FilePath: /Leetcode/Array/Q299_BullsAndCows.java
  */
 package Array;
-
-import java.util.Arrays;
 
 public class Q299_BullsAndCows {
     public static void main(String[] args) {
