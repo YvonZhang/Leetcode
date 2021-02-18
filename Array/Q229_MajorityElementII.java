@@ -5,7 +5,7 @@
  * @Description: 
  * @Date: 2021-02-15 23:19:07
  * @LastEditors: Yuang Zhang
- * @LastEditTime: 2021-02-17 22:31:40
+ * @LastEditTime: 2021-02-18 10:42:12
  * @FilePath: /Leetcode/Array/Q229_MajorityElementII.java
  */
 package Array;
@@ -20,12 +20,13 @@ public class Q229_MajorityElementII {
         // int[] nums = { 1, 1, 2, 2, 7, 7, 8, 8, 9, 3, 9, 3, 9, 3, 9, 3, 9, 3, 9, 3, 9,
         // 3, 9, 3, 9, 3, 9, 3, 9, 3, 9, 3,
         // 9, 3, 9, 3, 9, 3 };
-        int[] nums = { 2, 1, 1, 3, 1, 4, 5, 6 };
+        // int[] nums = { 2, 1, 1, 3, 1, 4, 5, 6 };
         // int[] nums = { 1 };
         // int[] nums = { 1, 2 };
 
         Q229_MajorityElementII q229_MajorityElementII = new Q229_MajorityElementII();
         q229_MajorityElementII.new MyAnswer(nums);
+        q229_MajorityElementII.new MyAnswer2(nums);
     }
 
     class MyAnswer {
@@ -85,6 +86,68 @@ public class Q229_MajorityElementII {
             if (candidateB != null && candidateB != candidateA && validateB > (float) nums.length / 3)
                 res.add(candidateB);
             return res;
+        }
+    }
+
+    class MyAnswer2 {
+        MyAnswer2(int[] nums) {
+            System.out.println(majorityElement(nums).toString());
+        }
+
+        /**
+         * @description: Runtime: 1 ms, faster than 99.91% of Java online submissions
+         *               for Majority Element II.
+         * 
+         *               Memory Usage: 42.9 MB, less than 51.59% of Java online
+         *               submissions for Majority Element II.
+         * 
+         * @param {int[]} nums
+         * @return {*}
+         */
+        public List<Integer> majorityElement(int[] nums) {
+            List<Integer> res = new ArrayList<Integer>();
+
+            if (nums == null)
+                return res;
+
+            int countA = 0, countB = 0;
+            int candidateA = nums[0], candidateB = nums[0];
+
+            for (int i : nums) {
+                if (countA == 0 && candidateB != i) {
+                    candidateA = i;
+                } else if (countB == 0) {
+                    candidateB = i;
+                }
+
+                if (candidateA == i) {
+                    countA++;
+                } else if (candidateB == i) {
+                    countB++;
+                }
+
+                if (candidateA != i && candidateB != i) {
+                    countA--;
+                    countB--;
+                }
+            }
+
+            int validateA = 0, validateB = 0;
+            for (int i : nums) {
+                if (candidateA == i) {
+                    validateA++;
+                }
+                if (candidateB == i) {
+                    validateB++;
+                }
+            }
+
+            if (validateA > nums.length / 3)
+                res.add(candidateA);
+            if (candidateB != candidateA && validateB > nums.length / 3)
+                res.add(candidateB);
+            return res;
+
         }
     }
 }
